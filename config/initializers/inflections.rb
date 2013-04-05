@@ -13,3 +13,8 @@
 # ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+ActiveSupport::Inflector.inflections do |inflect|
+  # AHHH!!! Rails keeps looking for the table "humen"
+  inflect.irregular 'human', 'humans'
+end
